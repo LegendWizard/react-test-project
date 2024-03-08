@@ -1,0 +1,133 @@
+body {
+  font-family: "Lato", sans-serif;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 1;
+  right: 0;
+  background-color: #ffffff;
+  overflow-x: hidden;
+  transition: width 0.5s ease;
+  padding-top: 60px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add shadow to the left */
+  
+}
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  left: 25px;
+  font-size: 36px;
+  margin-right: 50px;
+}
+
+#main {
+  transition: margin-right 0.5s;
+  padding: 16px;
+  margin-right: 0;
+}
+
+#main.main-open {
+  margin-right: 250px;
+}
+
+/* Add this class to the side navigation when it is open */
+.sidenav.open {
+  width: 500px;
+}
+
+.logo-container {
+    padding-top: 100px; /* Place the logo 100px from the top */
+    display: flex;
+    margin-bottom: 20px;
+    justify-content: center; /* Center the logo horizontally */
+  }
+  
+  .logo {
+    width: 100px; /* Adjust width as needed */
+    height: auto;
+  }
+
+  .form-group {
+    display: flex;
+    justify-content: center; /* Center the input field horizontally */
+    margin-bottom: 10px;
+  }
+  
+  .form-group input,
+  .form-group select {
+    width: 70%;
+    padding: 8px;
+    border: 1px solid black;
+
+    background-color: #f1f1f1;
+  }
+.form-group input:focus,
+.form-group select:focus {
+  outline: none; /* Remove default focus outline */
+  border: 1px solid #000; /* Set focus border color to black */
+}
+.form-group select:focus {
+    outline: none; /* Remove default focus outline */
+    border: 1px solid #000; /* Set focus border color to black */
+  }
+.form-group input::placeholder {
+    color: rgb(117, 117, 117);
+  }
+
+
+
+  .button-container {
+    display: flex;
+    justify-content: center; /* Center the buttons horizontally */
+  }
+  
+  .save-button,
+  .cancel-button {
+    padding: 8px 46px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Add shadow to the left */
+    cursor: pointer;
+    margin: 0 8px; /* Add margin between the buttons */
+    margin-top: 190px;
+  }
+  
+  .save-button {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  .cancel-button {
+    background-color: #f44336;
+    color: white;
+  }
+  
+  .save-button:hover,
+  .cancel-button:hover {
+    opacity: 0.8;
+  }
+  td {
+    text-align: center; /* Horizontally center the content */
+    vertical-align: middle; /* Vertically center the content */
+  }
+  tr {
+
+    align-items: center; /* Vertically center the content */
+  }
+  
